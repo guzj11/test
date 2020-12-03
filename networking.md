@@ -350,7 +350,17 @@ network complexity required to deploy Kubernetes at scale within AWS.
 复杂性（每个 VPC 限制为50-100个条目）。
 简而言之，cni-ipvlan-vpc-k8s 大大降低了在 AWS 中大规模部署 Kubernetes 所需的网络复杂性。
 
+<!--
+ ### Coil
 
+ [Coil](https://github.com/cybozu-go/coil) is a CNI plugin designed for ease of integration, providing flexible egress networking.
+ Coil operates with a low overhead compared to bare metal, and allows you to define arbitrary egress NAT gateways for external networks.
+
+-->
+
+### Coil
+[Coil](https://github.com/cybozu-go/coil) 是一个为易于集成、提供灵活的出站流量网络而设计的 CNI 插件。
+与裸机相比，Coil 的额外操作开销低，并允许针对外部网络的出站流量任意定义 NAT 网关。
 
 
 <!--
